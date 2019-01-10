@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>main</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row header">
+            <div class="col center">
+                <a href="main.html">
+                    <p class="title">빙픽</p>
+                </a>
+                <form action="" method="post">
+                    <input id="search" type="text" placeholder="넣어 먹을 재료를 검색하세요!!">
+                    <a href="list.html"><input id="searchbutton" type="button" value="검색"></a>
+                </form>
+            </div>
+            <div class="col login">
+                <a href="#">
+                    <div class="back">
+                        <div class="button_base b03_skewed_slide_in">
+                            <div>로그인하기</div>
+                            <div></div>
+                            <div>로그인하기</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row navbar">
+            <ul class="col">
+                <a href="ranking.html">
+                    <li class="nav">랭킹보기</li>
+                </a>
+                <a href="404.html">
+                    <li class="nav">레시피 업로드</li>
+                </a>
+                <a href="p-category.html">
+                    <li class="nav">편의점</li>
+                </a>
+                <a href="category.html">
+                    <li class="nav">카테고리</li>
+                </a>
+                <a href="404.html">
+                    <li class="nav">고객센터</li>
+                </a>
+            </ul>
+        </div>
+        <div class="row main">
+            <div class="col center contents">
+                <div class="post">
+                    <div class="maintable" style="border-right: gray 1px dashed;">
+                        <p class="tabletitle">야식 랭킹</p>
+                        <div class="bar"></div>
+                        <div class="rank">
+                            <a href="detail.html">
+                                <div class="circle1" id="rank1"></div>
+                            </a>
+                            <a href="detail.html">
+                                <div class="circle2" id="rank2"></div>
+                            </a>
+                            <a href="detail.html">
+                                <div class="circle3" id="rank3"></div>
+                            </a>
+                        </div>
+                        <a href="ranking.html" class="more">더보기</a>
+                    </div>
+                    <div class="maintable">
+                        <p class="tabletitle">최근댓글</p>
+                        <div class="bar"></div>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p class="tabletext">널</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="tabletext">널</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="tabletext">널</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="tabletext">널</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="tabletext">널</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="tabletext">널</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="tabletext">널</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="tabletext">널</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="tabletext">널</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p class="tabletext">널</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="ranking.html" class="more">더보기</a>
+                    </div>
+                    <div class="maintable" style="border-left: gray 1px dashed;">
+                        <p class="tabletitle">편의점 랭킹</p>
+                        <div class="bar"></div>
+                        <div class="rank">
+                            <a href="detail.html">
+                                <div class="circle1" id="p-rank1"></div>
+                            </a>
+                            <a href="detail.html">
+                                <div class="circle2" id="p-rank2"></div>
+                            </a>
+                            <a href="detail.html">
+                                <div class="circle3" id="p-rank3"></div>
+                            </a>
+                        </div>
+                        <a href="ranking.html" class="more">더보기</a>
+                    </div>
+                </div>
+                <div class="random">
+                    <input id="random-button" class="btn-3d purple" type="button" value="랜덤뽑기" onclick="doPopupopen()">
+                    <div class="random-box">
+                        <ul style="padding: 5px 0px 0px 5px;">
+                            <li style="padding-left: 8px; padding-right: 7px;" class="random-list">맛</li>
+                            <li class="random-list">달콤 <input type="checkbox"></li>
+                            <li class="random-list">짭쪼름 <input type="checkbox"></li>
+                            <li class="random-list">새콤 <input type="checkbox"></li>
+                            <li class="random-list">매움 <input type="checkbox"></li>
+                            <li class="random-list">고소 <input type="checkbox"></li>
+                        </ul>
+                        <ul style="padding: 5px 0px 0px 5px;">
+                            <li class="random-list">가격</li>
+                            <li class="random-list">5000원 이하 <input type="checkbox"></li>
+                            <li class="random-list">5000원~10000원 <input type="checkbox"></li>
+                            <li class="random-list">10000원 이상 <input type="checkbox"></li>
+                        </ul>
+                        <ul style="padding: 5px 0px 5px 5px;">
+                            <li class="random-list">종류</li>
+                            <li class="random-list">한식 <input type="checkbox"></li>
+                            <li class="random-list">양식 <input type="checkbox"></li>
+                            <li class="random-list">중식 <input type="checkbox"></li>
+                            <li class="random-list">일식 <input type="checkbox"></li>
+                            <li class="random-list">분식 <input type="checkbox"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col footer">
+                copyright
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        function doPopupopen() {
+            window.open("random.html", "popup01", "width=523, height=700");
+        }
+    </script>
+    <script src="main.js"></script>
+</body>
+
+</html>
