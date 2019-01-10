@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>p-category</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row header">
+            <div class="col center">
+                <a href="main.html">
+                    <p class="title">빙픽</p>
+                </a>
+                <form action="" method="post">
+                    <input id="search" type="text" placeholder="넣어 먹을 재료를 검색하세요!!">
+                    <a href="list.html"><input id="searchbutton" type="button" value="검색"></a>
+                </form>
+            </div>
+            <div class="col login">
+                <a href="#">
+                    <div class="back">
+                        <div class="button_base b03_skewed_slide_in">
+                            <div>로그인하기</div>
+                            <div></div>
+                            <div>로그인하기</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row navbar">
+            <ul class="col">
+                <a href="ranking.html">
+                    <li class="nav">랭킹보기</li>
+                </a>
+                <a href="404.html">
+                    <li class="nav">레시피 업로드</li>
+                </a>
+                <a href="p-category.html">
+                    <li class="nav">편의점</li>
+                </a>
+                <a href="category.html">
+                    <li class="nav">카테고리</li>
+                </a>
+                <a href="404.html">
+                    <li class="nav">고객센터</li>
+                </a>
+            </ul>
+        </div>
+        <div class="row main">
+            <div class="col">
+                <div class="row">
+                    <div style="margin-top: 30px;  margin-left: 15px; background-image: url(http://res.cloudinary.com/aceshinek/image/upload/c_fit,f_auto,h_420,w_600/v1515630656/w0mftxrtcmrme1h51uuv.jpg)" class="col p-category"></div>
+                    <div style="margin-top: 30px;  background-image: url(http://img.hankyung.com/photo/201712/01.15362214.1.jpg)" class="col p-category"></div>
+                </div>
+                <div class="row">
+                    <div style="margin-left: 15px; background-image: url(https://insideretail.asia/wp-content/uploads/2017/03/eleven-Hong-Kong.jpg)" class="col p-category"></div>
+                    <div style="background-image: url(https://www.ministop.com.ph/assets/themes/custom/images/storefacade.jpg);" class="col p-category"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col footer">
+                copyright
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script> <!-- Load jQuery first -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <!-- Load Tilt.js library -->
+    <script>
+        $('.p-category').tilt({
+        })
+    </script>
+</body>
+</html>
